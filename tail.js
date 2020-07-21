@@ -3,7 +3,7 @@ const tail = function (actual, expected) {
   if (actual[0] === expected) {
     console.log(actual.slice(1));
   } else {
-    console.log(actual.slice(1));
+    console.log(actual.slice());
   }
 
   return tail;
