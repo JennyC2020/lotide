@@ -1,6 +1,6 @@
 // AssertArraysEqual
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     console.log(`✳️ ✳️ ✳️ Assertion Passed:  ${actual} ===  ${expected}`);
   } else {
@@ -12,7 +12,7 @@ const assertArraysEqual = function (actual, expected) {
 
 // EqArrays
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] === array2[i]) {
       return true;
@@ -40,7 +40,7 @@ const data2 = [
   'Redwood',
 ];
 
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   var newArray = [];
 
   for (var i = 0; i < array.length; i++) {
@@ -54,6 +54,7 @@ const takeUntil = function (array, callback) {
 
   return newArray;
 };
+module.exports = takeUntil;
 
 const results1 = takeUntil(data1, (x) => x < 0);
 const results2 = takeUntil(data2, (x) => x === ',');

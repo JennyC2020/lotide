@@ -1,5 +1,5 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✳️ ✳️ ✳️ Assertion Passed:  ${actual} ===  ${expected}`);
   } else {
@@ -18,7 +18,7 @@ var findKeyIn = {
   Akelarre: { stars: 3 },
 };
 
-var findKey = function (object, callback) {
+var findKey = function(object, callback) {
   for (var item in object) {
     if (callback(object[item])) {
       return item;
@@ -27,6 +27,7 @@ var findKey = function (object, callback) {
 
   return undefined;
 };
+module.exports = findKey;
 
 var found = findKey(findKeyIn, (item) => item.stars === 2);
 console.log(found);
