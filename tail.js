@@ -1,14 +1,8 @@
-// FUNCTION IMPLEMENTATION
-const tail = function (actual, expected) {
-  if (actual[0] === expected) {
-    console.log(actual.slice(1));
-  } else {
-    console.log(actual.slice(1));
-  }
 
-  return tail;
+const tail = function(array) {
+  return array.slice(1);
 };
 
-// TEST CODE
-console.assert(tail([5, 6, 7], 5));
-console.assert(tail(['Hello', 'Lighthouse', 'Labs'], 'Hello'));
+module.exports = tail;
+
+
