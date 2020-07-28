@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@jennyc2020/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mini clone version of Lodash",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/JennyC2020/lotide.git"
   },
-  "author": "",
+  "author": "Jenny Citherlet",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JennyC2020/lotide/issues"
